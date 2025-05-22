@@ -16,7 +16,15 @@ app.use(cors())
 app.use(express.json());
 
 //creating Database name using this connect method and also for connect
-mongoose.connect("mongodb://localhost:27017/TodoApp")
+
+// importing this specific line of code to make mongo db run from RENDER
+const mongoURI = process.env.MONGODB_URI;
+
+// connecting the mongo db through this variable(mongo db url) to mongoose - this is the old line of code " mongoose.connect("mongodb://localhost:27017/TodoApp") ", this used localhost to connect
+mongoose.connect(mongoURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 .then(()=>{
     console.log("DB connected")
 })
