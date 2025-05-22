@@ -1,0 +1,143 @@
+.left-main-div{
+    min-width: 49%;
+    min-height: 95vh;
+    background-color: rgb(170, 170, 233);
+    padding: 10px 30px;
+    font-family:cursive;
+    box-sizing: border-box;
+}
+
+/* RECENT TASKS heading design */
+.left-main-div h1{
+    color:rgb(57, 57, 117);
+}
+
+/* main div INSIDE of the right container */
+.left-content-box{
+    width: 100%;
+    height: 91%;
+    border-radius: 10px;
+    overflow-y: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    
+}
+
+        .left-content-box::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        .left-content-box::-webkit-scrollbar-track {
+            background: #f0f0f0;
+        }
+        
+        .left-content-box::-webkit-scrollbar-thumb {
+            background-color: #927aa7;
+            border-radius: 10px;
+            border: 2px solid #f0f0f0;
+        }
+        .left-content-box h2{
+            margin-top: 20px;
+            color: white;
+        }
+
+/* list of tasks' separate boxes' div design */
+.Tasks-box{
+    width: 100%;
+    padding: 15px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: mediumpurple;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-icon{
+    color: rgb(97, 96, 96);
+    /* padding-left: 5px; */
+    margin-left: 10px;
+}
+
+.dlt-icon{
+    color: red;
+    /* padding-left: 10px; */
+}
+
+/* .tag{
+    position:relative;
+    top: -18%;
+    font-size: 25px;
+} */
+
+        .tasks-top-line .edit-icon:hover{
+            background-color: rgb(90, 88, 88);
+            color: white;
+            border-radius: 50%;
+        }
+        .tasks-top-line .dlt-icon:hover{
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+        }
+
+.tasks-top-line{
+    display: flex;
+    justify-content: space-between;
+}
+.tasks-top-line div{
+    display: flex;
+    gap: 10px;
+    width: 200px;
+}
+
+        .tasks-top-line .title{
+        font-size:22px;
+        font-weight: 700;
+        color: blueviolet;
+        margin-top: -10px;
+        }
+
+.tasks-bottom-line{
+    display: flex;
+    justify-content: space-between;
+    color:lightslategray;
+}
+
+        .tasks-top-line h4{
+            font-size: 12px;
+            font-weight: 200;
+        }
+
+        .tasks-bottom-line p{
+            width: 80%;
+            font-size: 18px;
+        }
+
+/* -------------------------- responsive design ------------------------------ */
+
+        @media screen and (max-width:550px){
+            .left-main-div{
+                width: 95%;
+                min-height: 80vh;
+                padding: 30px 10px;
+            }
+           
+          }
+
+          @media screen and (max-width:360px){
+            .tasks-top-line .title{
+                font-size: 18px;
+            }
+            .tasks-top-line h4{
+                font-size: 10px;
+            }
+            .edit-icon, .dlt-icon{
+                margin-top: -5px;
+            }
+            .tasks-bottom-line p{
+                font-size: 15px;
+            }
+           
+          }

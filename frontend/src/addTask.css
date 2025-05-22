@@ -1,0 +1,104 @@
+.right-main-div{
+    min-width: 49%;
+    height: 95vh;
+    /* background-color: aqua; */
+    background-color: rgb(170, 170, 233);
+    padding: 10px 30px;
+    font-family:cursive;
+}
+
+.right-title{
+    color:rgb(57, 57, 117);
+}
+
+.adding-task-box{
+    width: 100%;
+    height: 80%;
+    background-color:rgb(248, 246, 246);
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+/* .adding-task-box textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    padding: 10px;
+} */
+
+.title{
+    color: blueviolet;
+   margin-bottom: 10px;
+   font-size:26px;
+}
+
+.adding-task-box input{
+    width: 95%;
+    padding: 15px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 189, 189);
+    margin-bottom: 30px;
+}
+
+.adding-task-box input::placeholder{
+    font-family: cursive;
+}
+
+.description{
+    color: blueviolet;
+    margin-bottom: 10px;
+    font-size:26px;
+}
+
+.adding-task-box textarea{
+    width: 95%;
+    height: 57%;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    border: 1px solid rgb(190, 189, 189);
+}
+
+.adding-task-box textarea::placeholder{
+    font-family:cursive;
+}
+
+.add-task-btn{
+    width: 100%;
+    padding: 12px 5px;
+    background-color: rgb(8, 8, 80);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    border: 1px dashed transparent;
+    font-family:cursive;
+}
+
+.add-task-btn:hover{
+    background-color: rgb(48, 48, 202);
+    border: 1px dashed rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+/* -------------------------- responsive design ----------------------------- */
+
+@media screen and (max-width:550px){
+    .right-main-div{
+        width: 95%;
+        /* changing/increasing the min-height property to avoid the extra gap in mobile size 
+        when change the two main boxes from flex-direction : row to column */
+        min-height: 80vh;
+        padding: 30px 10px;
+    }
+    .adding-task-box input,.adding-task-box textarea{
+        width: 100%;
+    }
+   
+  }
