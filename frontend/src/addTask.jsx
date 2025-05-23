@@ -16,7 +16,7 @@ const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formValue)
 
-    fetch('http://todo-backend-i7pa.onrender.com/todo', {
+    fetch('https://todo-backend-i7pa.onrender.com/todo', {
       method: 'POST',
       headers: {'content-type':'application/json'},
       body: JSON.stringify(formValue)
@@ -49,7 +49,7 @@ const handleSubmit = (event) => {
 
 
 const updateHandler = () => {
-  fetch(`http://todo-backend-i7pa.onrender.com/todo/${formValue._id}`, {
+  fetch(`https://todo-backend-i7pa.onrender.com/todo/${formValue._id}`, {
     method: 'PUT',
     headers: {'content-type':'application/json'},
     body: JSON.stringify(formValue)
