@@ -21,7 +21,7 @@ export default function TasksComp(updateTasks){
 
     useEffect(()=>{
       console.log("get ran")
-        fetch('http://localhost:3210/todo',
+        fetch('http://todo-backend-i7pa.onrender.com/todo',
           {
             method : 'GET',
             headers : {'content-type' : 'application/json'}
@@ -43,7 +43,7 @@ export default function TasksComp(updateTasks){
    
 const deleteHandler = (id) => {
   
-  fetch(`http://localhost:3210/todo/${id}`, {
+  fetch(`http://todo-backend-i7pa.onrender.com/todo/${id}`, {
     method: 'DELETE',
     headers: {'content-type':'application/json'},
   }).then(res => {
