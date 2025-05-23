@@ -2,6 +2,9 @@ const express = require("express");
 
 const app = express();
 
+//required to connect the  connection string(mongodb atlas)
+require("dotenv").config();
+
 //integrating this library integrating mongoDB in node js
 const mongoose = require('mongoose')
 
