@@ -91,7 +91,7 @@ const updateHandler = () => {
               </textarea>
               {formValue._id === undefined ? 
               <button className='add-task-btn'>Add to the list</button> :
-              <button style={{background:"orange"}} className='add-task-btn' onClick={updateHandler}>Update</button>
+              <button type="button" style={{background:"orange"}} className='add-task-btn' onClick={updateHandler}>Update</button>
               }
             </form>
            
